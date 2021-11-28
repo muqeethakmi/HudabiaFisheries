@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-image:url("images/boat-gd312bce88_1920.jpg");
+}
+
+h1{
+    margin-top: 140px;
+   text-align: center;
+}
+
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left:8%;
+    padding-right:8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}   
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-icon{
+    width: 25px;
+    cursor: pointer;    
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right:30px ;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+nav ul li a:hover{
+    color: #000000;
+}
+
+
+
+
+.social-links img{
+    height: 15px;
+    margin: 10px;
+    cursor: pointer;
+    margin-top: 200px;
+}
+
+.social-links{
+    text-align: center;
+}
+
+@media (max-width: 500px){ 
+    nav ul{
+        width: 100%;
+        background:linear-gradient( #000000, #828282);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+    color: #fff;
+    }
+    
+    .menu-icon{
+        display: block;
+    }
+    
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    
+}
+
+
+@media (max-width: 768px){
+    nav ul{
+        width: 100%;
+        background:linear-gradient( #000000, #7e7e7e);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+    color: #fff;
+    }
+
+
+    
+    .menu-icon{
+        display: block;
+    }
+
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+  
+}
